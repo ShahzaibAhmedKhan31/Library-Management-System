@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href= "/public/assets/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body  style="background-color:lavenderblush">
+    <div class="container login-container"  style="background-color:white">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                <h3>Users</h3>
+                <form method="POST" action="/user" autocomplete="off" >
+                    <div class="form-group">
+                        <input type="text" class="form-control" name= "emailUser" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name= "passwordUser" placeholder="Your Password *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="ForgetPwd">Forget Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 login-form-2">
+                <h3>Admin</h3>
+                <form method="POST" action="/admin" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name= "email" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name= "password" placeholder="Your Password *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name ="insert" class="btnSubmit" value="Login" />
+                    </div>
+                    <div class="form-group">
+
+                        <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
